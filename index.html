@@ -5,20 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+    <!-- responsive-->
+    <link rel="stylesheet" href="style/responsive.css">
+   
+    <!--owl css-->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
     <title>Stremy.fy</title>
 </head>
 <body>
     <header>
         <div class="container">
             <h2 class="logo">STREMY.FY</h2>
-            <nav>
-                <a href="#">Ínicio</a>
-                <a href="#">Séries</a>
-                <a href="#">Filmes</a>
-                <a href="#">Documentários</a>
-                <a href="#">Minha Lista</a>
-            </nav>
-        </div>
+                <div class="menunav">
+                    <nav>
+                        <a href="#">Ínicio</a>
+                        <a href="#">Séries</a>
+                        <a href="#">Filmes</a>
+                        <a href="#">Documentários</a>
+                        <a href="#">Minha Lista</a>
+                    </nav>
+                </div>
+
+                <div class="dropdown" style="float:left;">
+                    <button role="button" class="dropbtn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="dropdown-content">
+                    <a href="#">Ínicio</a>
+                    <a href="#">Séries</a>
+                    <a href="#">Filmes</a>
+                    <a href="#">Documentários</a>
+                    <a href="#">Minha Lista</a>
+                    <a href="#">Configurações</a>
+                    <a href="#">Sair</a>
+                    </div>
+                  </div>
+                
     </header>
 
     <main>
@@ -40,6 +65,49 @@
 
         </div>
     </main>
+
+    <div class="carrosel-filmes">
+        <div class="categoria1">
+            <h2>Séries DC Comics</h2>
+        </div>
+
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img class="box-filme" src="img/arrow-frente.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/frente-batwoman.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/frente-flash.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/frente-gotham.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/frente-legendstmr.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/frente-raionegro.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/frente-smallville.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/frente-superelois.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/frente-supergirl.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/frente-titans.jpg" alt="" srcset="">
+            </div>
+        </div>
+    </div>
+
     <script src="https://kit.fontawesome.com/7a0f4bb759.js" crossorigin="anonymous"></script>
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/setup.js"></script>
 </body>
 </html>

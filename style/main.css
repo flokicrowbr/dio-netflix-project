@@ -25,9 +25,60 @@ header .container{
     margin-bottom: 5px;
 }
 
+header .menunav{
+    margin-left: 100px;
+}
+
+/* menu mobile */
+.dropbtn {
+    background-color: #292b29;
+    color: white;
+    padding: 18px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    justify-content: right;
+    margin-left: 30px;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #1b1b1b;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: #757775;
+  }
+/* fim */
+
 header .logo{
     margin-left: 15px;
-    margin-right: 100px;
+    
     color: var(--roxo);
     font-family: 'Arial Black,' Times;
     font-size: 40px;
@@ -49,8 +100,8 @@ header nav a:hover{
 .filme-principal{
     font-size: 16px;
     background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url(../img/capa-flash.jpg);
-    
-    height: 700px;
+    background-size: 100%;
+    height: 600px;
     background-size: cover;
 
     display: flex;
@@ -96,4 +147,45 @@ header nav a:hover{
 
 .botao i{
     margin-right: 8px;
+}
+
+.container{
+    margin-left: 20px;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+    padding-top: 2px;
+    padding-right: 10px;
+}
+
+.categoria1{
+    justify-content: center;
+    padding: 5px;
+    padding-left: 2%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.categoria1:hover{
+
+}
+
+.box-filme:hover{
+    cursor: pointer;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.carrosel-filmes{
+    margin-top: 5px;
 }
